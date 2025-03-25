@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KernelBlazeMind.Shared", "KernelBlazeMind.Shared\KernelBlazeMind.Shared.shproj", "{32AE8D17-85A5-433E-88DB-107487338B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.Abstraction", "KernelBlazeMind.Abstraction\KernelBlazeMind.Abstraction.csproj", "{A1E01967-DDDE-4501-93C1-7D33CA66FA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.Core", "KernelBlazeMind.Core\KernelBlazeMind.Core.csproj", "{841DF70A-4A79-4626-BE18-396A4AFBCD1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.App", "KernelBlazeMind.App\KernelBlazeMind.App.csproj", "{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.iOS", "KernelBlazeMind.iOS\KernelBlazeMind.iOS.csproj", "{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.Core.Test", "KernelBlazeMind.Core.Test\KernelBlazeMind.Core.Test.csproj", "{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1E01967-DDDE-4501-93C1-7D33CA66FA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E01967-DDDE-4501-93C1-7D33CA66FA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E01967-DDDE-4501-93C1-7D33CA66FA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E01967-DDDE-4501-93C1-7D33CA66FA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841DF70A-4A79-4626-BE18-396A4AFBCD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841DF70A-4A79-4626-BE18-396A4AFBCD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841DF70A-4A79-4626-BE18-396A4AFBCD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841DF70A-4A79-4626-BE18-396A4AFBCD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBD8873C-5961-46BA-AF50-58FA9D46FD3A}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		KernelBlazeMind.Shared\KernelBlazeMind.Shared.projitems*{32ae8d17-85a5-433e-88db-107487338b37}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
