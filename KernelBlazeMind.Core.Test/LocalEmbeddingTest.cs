@@ -19,21 +19,9 @@ using OpenAI.Chat;
 namespace KernelBlazeMind.Core.Test
 {
     [TestClass]
-    public sealed class LocalEmbeddingTest
+    public sealed class LocalEmbeddingTest: TestBase
     {
-        private static readonly HttpClient httpClient = new HttpClient();
-
-        [AssemblyInitialize]
-        public static void AssemblyInit(TestContext context)
-        {
-            // This method is called once for the test assembly, before any tests are run.
-        }
-
-        [AssemblyCleanup]
-        public static void AssemblyCleanup()
-        {
-            // This method is called once for the test assembly, after all tests are run.
-        }
+      
 
         [ClassInitialize]
         public static void ClassInit(TestContext context)
@@ -62,6 +50,7 @@ namespace KernelBlazeMind.Core.Test
         [TestMethod]
         public async Task TestLocalEmbedding()
         {
+            var httpClient = new HttpClient();
             var requestBody = new
             {
                 model = "text-embedding-granite-embedding-278m-multilingual",
@@ -100,6 +89,7 @@ namespace KernelBlazeMind.Core.Test
         [TestMethod]
         public async Task TestLocalChat()
         {
+            var httpClient = new HttpClient();
             var requestBody = new
             {
                 model = "gemma-3-27b-it",
@@ -129,6 +119,7 @@ namespace KernelBlazeMind.Core.Test
         [TestMethod]
         public async Task TestLocalChatWithPicture()
         {
+            var httpClient = new HttpClient();
             var stream = await CreatePictureCircleAsync();
             byte[] imageBytes;
             using (var memoryStream = new MemoryStream())
@@ -167,7 +158,7 @@ namespace KernelBlazeMind.Core.Test
             Assert.IsNotNull(responseBody, "Response body should not be null");
             Assert.IsTrue(responseBody.Contains("circle"), "should mention it is circle");
             Console.WriteLine(responseBody);
-            // Additional assertions can be added here to validate the response content
+            // Additional assertions can be added here to validate the response content 
         }
         [TestMethod]
         public async Task TestLocalChatWithPictureUsingOpenAISDK()

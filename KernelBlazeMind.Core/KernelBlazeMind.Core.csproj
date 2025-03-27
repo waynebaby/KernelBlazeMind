@@ -7,15 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MetadataExtractor" Version="2.8.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.3" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.43.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureOpenAI" Version="1.43.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.43.0" />
+    <PackageReference Include="Openize.Heic" Version="25.2.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\KernelBlazeMind.Abstraction\KernelBlazeMind.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Images\" />
   </ItemGroup>
 
 </Project>
