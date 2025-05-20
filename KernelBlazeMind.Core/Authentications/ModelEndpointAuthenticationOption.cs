@@ -1,6 +1,6 @@
 ﻿namespace KernelBlazeMind.Abstraction.Authentications
 {
-    public interface IModelEndpointAuthenticationConfiguration
+    public class ModelEndpointAuthenticationOption
     { 
     
     

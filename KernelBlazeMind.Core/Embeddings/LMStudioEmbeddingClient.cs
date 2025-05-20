@@ -14,6 +14,27 @@ namespace KernelBlazeMind.Core.Embeddings
     {
         private readonly HttpClient _httpClient;
         private readonly string _model;
+        public LMStudioEmbeddingClient(EmbeddingClientOptions options)
+        {
+            if (string.IsNullOrEmpty(options.ApiKey))
+            {
+                throw new ArgumentException("API key cannot be null or empty", nameof(options.ApiKey));
+            }
+            if (string.IsNullOrEmpty(options.Endpoint))
+            {
+                throw new ArgumentException("Endpoint cannot be null or empty", nameof(options.Endpoint));
+            }
+            if (string.IsNullOrEmpty(options.Model))
+            {
+                throw new ArgumentException("Model cannot be null or empty", nameof(options.Model));
+            }
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri(options.Endpoint)
+            };
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", options.ApiKey);
+            _model = options.Model;
+        }
 
         public LMStudioEmbeddingClient(string baseUrl, string apiKey, string model)
         {
@@ -55,7 +76,7 @@ namespace KernelBlazeMind.Core.Embeddings
     public class EmbeddingResponse
     {
         [JsonPropertyName("data")]
-        public List<EmbeddingData> Data { get; set; }
+        public List<EmbeddingData> Data { get; set; } = new List<EmbeddingData>();
     }
 
     public class EmbeddingData

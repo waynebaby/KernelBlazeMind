@@ -61,7 +61,7 @@ namespace KernelBlazeMind.Core.Test
 
             var requestBody = new
             {
-                model = "gemma-3-27b-it",
+                model = "gemma-3-4b-it",
                 messages = new object[]
                 {
                     new { role = "system", content = @"

@@ -61,19 +61,31 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
-        <PackageReference Include="Microsoft.SemanticKernel" Version="1.43.0" />
-        <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.43.0" />
-        <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.43.0" />
-        <PackageReference Include="Microsoft.SemanticKernel.PromptTemplates.Handlebars" Version="1.43.0" />
-        <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.43.0" />
+        <PackageReference Include="CommunityToolkit.Maui" Version="11.2.0" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.70" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="9.0.70" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.5" />
+        <PackageReference Include="Microsoft.SemanticKernel" Version="1.52.1" />
+        <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.52.1" />
+        <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.52.1" />
+        <PackageReference Include="Microsoft.SemanticKernel.PromptTemplates.Handlebars" Version="1.52.1" />
+        <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.52.1" />
+        <PackageReference Include="MVVM-Sidekick.MAUIBlazor" Version="0.2505.943.3675" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\KernelBlazeMind.Abstraction\KernelBlazeMind.Abstraction.csproj" />
       <ProjectReference Include="..\KernelBlazeMind.Core\KernelBlazeMind.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="WebSearch.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Extensions\" />
     </ItemGroup>
 
 </Project>

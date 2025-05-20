@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.iOS", "Kern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelBlazeMind.Core.Test", "KernelBlazeMind.Core.Test\KernelBlazeMind.Core.Test.csproj", "{11C96EE3-960E-4DF7-8F32-EC9FEAE41760}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,7 @@ Global
 		{841DF70A-4A79-4626-BE18-396A4AFBCD1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8CB8A07-02B4-46A8-9988-43AEF4E784D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FDDE4B6-E8C5-4673-B587-FDECD9B48A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,6 +47,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1E01967-DDDE-4501-93C1-7D33CA66FA83} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{841DF70A-4A79-4626-BE18-396A4AFBCD1B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBD8873C-5961-46BA-AF50-58FA9D46FD3A}

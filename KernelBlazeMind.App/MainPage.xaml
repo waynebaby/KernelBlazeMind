@@ -2,12 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:KernelBlazeMind.App"
-             x:Class="KernelBlazeMind.App.MainPage">
+             x:Class="KernelBlazeMind.App.MainPage"
+             xmlns:pj="clr-namespace:KernelBlazeMind.App"
+             xmlns:beh="clr-namespace:KernelBlazeMind.App.Behaviors">
 
-    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
-        <BlazorWebView.RootComponents>
-            <RootComponent Selector="#app" ComponentType="{x:Type local:Components.Routes}" />
-        </BlazorWebView.RootComponents>
-    </BlazorWebView>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="60" />
+        </Grid.ColumnDefinitions> 
+        <BlazorWebView x:Name="blazorWebView" Grid.Column="0" HostPage="wwwroot/index.html">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Components.Routes}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+        <Grid Grid.Column="1" BackgroundColor="LightGray">
+            <StackLayout  >
+                <Button
+                    Text="Open Web Search"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <Button.Behaviors>
+                        <beh:SendEventMessageBehavior EventMessage="OpenWebSearch" />
+                    </Button.Behaviors>
+                </Button>
 
+            </StackLayout>
+
+
+        </Grid>
+    </Grid>
 </ContentPage>
